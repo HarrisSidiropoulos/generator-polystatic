@@ -1,0 +1,25 @@
+<div class="carousel slide" data-img-max-width="1024" data-img-max-height="600" data-ride="carousel">
+  {{#lengthIsGreater media 1}}
+  <ol class="carousel-indicators">
+    {{#foreach media}}
+      <li data-slide-to="{{ $index }}" class="{{#if $isFirst}}active{{/if}}"></li>
+    {{/foreach}}
+  </ol>
+  {{/lengthIsGreater}}
+  <div class="carousel-inner">
+    {{#foreach media}}
+      <div class="item {{#if $isFirst}}active{{/if}}">
+        {{#is type "video"}}
+          <div class="carousel-media-control">
+            <a href="#" data-media-type="{{ mediaType }}" data-media-src="{{ videoSrc }}"><span class="glyphicon video-icon"></span></a>
+          </div>
+        {{/is}}
+        <img data-src="{{ src }}" />
+      </div>
+    {{/foreach}}
+  </div>
+  {{#lengthIsGreater media 1}}
+  <a class="left carousel-control" data-slide="prev"><span class="glyphicon carousel-previous-arrow"></span></a>
+  <a class="right carousel-control" data-slide="next"><span class="glyphicon carousel-next-arrow"></span></a>
+  {{/lengthIsGreater}}
+</div>

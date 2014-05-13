@@ -1,0 +1,28 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.0.1",
+  "authors": [
+    "harris sidiropoulos <harris.sidiropoulos@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Effeckt.css": "https://github.com/h5bp/Effeckt.css.git",
+    "Modernizr": "git://github.com/Modernizr/Modernizr.git#~2.7.2",
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
+    "bootstrap": "~3.1.1",
+    "jqueri-ui": "~1.10.4",
+    "greensock-js": "~1.10.2"
+  }
+}

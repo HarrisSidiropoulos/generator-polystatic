@@ -1,0 +1,18 @@
+<title>{{ name }} - {{ title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{#if production }}
+<style>
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/YQ4t7M-eeDSWa1BA2hnMJOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  }
+  {{> foldCSS }}
+</style>
+{{else}}
+<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,greek-ext,greek' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ assets }}/libs/Effeckt.css/css/effeckt.css">
+<link type="text/css" rel="stylesheet" href="{{ assets }}/css/styles.css">
+{{/if}}

@@ -1,0 +1,22 @@
+.social_icons {
+  opacity: 1;
+}
+a:hover .social_icons {
+  opacity: 1;
+}
+.googleplus-icon {
+  @extend .sprite_googleplus-icon;
+  @extend .social_icons;
+}
+.twitter-icon {
+  @extend .sprite_twitter-icon;
+  @extend .social_icons;
+}
+.facebook-icon {
+  @extend .sprite_facebook-icon;
+  @extend .social_icons;
+}
+.social-icon {
+  padding: 0px 5px;
+  display: inline-block !important;
+}

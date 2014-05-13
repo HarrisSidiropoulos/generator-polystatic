@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.idea
+.idea/workspace.xml
+*.idea/workspace.xml
+
+.sass-cache
+
+static/publish
+node_modules
+static/assets/libs

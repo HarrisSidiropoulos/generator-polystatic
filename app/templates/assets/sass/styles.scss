@@ -1,0 +1,23 @@
+/* Don't change this file */
+/* last import compiles all sass files */
+
+@import "../libs/bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+@import "autovariables";
+@import "variables";
+@import "mixins";
+@import "animations";
+$pathToSprite : '../images/sprites.png';
+@import "sprites";
+@import "icons";
+
+@import "base";
+@import "layout";
+@import "theme";
+@import "state";
+@import "drupal_login";
+@import "icons";
+@import "modules";
+
+/*============Modules====================*/
+@import "header";
+@import "footer";
